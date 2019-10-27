@@ -20,6 +20,7 @@ public class Point {
 	 **********************************************************/
 	public Point() {
 		//update: call the third constructor
+		this(0, 0);
 	}
 	
 	/**********************************************************
@@ -29,6 +30,7 @@ public class Point {
 	 **********************************************************/
 	public Point(Point other) {
 		//update: call the third constructor
+		this(other.x, other.y);
 	}
 	
 	/***********************************************************
@@ -39,6 +41,7 @@ public class Point {
 	 ***********************************************************/
 	public Point(int x, int y) {
 		// update: reduce redundancy with setLocation
+		setLocation(x, y);
 	}
 	
 	/***********************************************************
@@ -87,6 +90,7 @@ public class Point {
 	 ***************************************************************/
 	public void setLocation(Point other) {
 		//update: use Javadoc description above
+		setLocation(other.x, other.y);
 	}
 	
 	/*****************************************************************
@@ -97,15 +101,17 @@ public class Point {
 	 *****************************************************************/
 	public void setLocation(int x, int y) {
 		//update: use Javadoc description above
+		this.x = x;
+		this.y = y;
 	}
 	
 	/***************************************************************
 	 * 	returns string representation of point.
 	 * 	@return point (x, y) coordinates.
 	 ***************************************************************/
-	public String toString() {
-		return "(" + x +  ", " + y + ")";
-	}
+	 public String toString() {
+	 	return "(" + x +  ", " + y + ")";
+	 }
 	
 	/***************************************************************
 	 * 	shifts the current point's (x,y) location by dx along the 

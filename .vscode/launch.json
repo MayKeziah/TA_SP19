@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-XAbstractClient<L1_ObjectLab>",
+            "request": "launch",
+            "mainClass": "abstraction.XAbstractClient",
+            "projectName": "L1_ObjectLab"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PointClient<L1_ObjectLab>",
+            "request": "launch",
+            "mainClass": "coordinates.PointClient",
+            "projectName": "L1_ObjectLab"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-XInterfaceClient<L1_ObjectLab>",
+            "request": "launch",
+            "mainClass": "shapes.XInterfaceClient",
+            "projectName": "L1_ObjectLab"
+        }
+    ]
+}
